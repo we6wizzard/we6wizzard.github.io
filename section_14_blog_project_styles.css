@@ -127,6 +127,10 @@ footer ul {
 
 }
 
+footer li a {
+    color: blue;
+}
+
 
 footer ul li {
     display: inline;
@@ -135,7 +139,7 @@ footer ul li {
 
 
 footer li a:hover {
-    text-decoration: undeline;
+    text-decoration: underline;
     color: white;
 }
 

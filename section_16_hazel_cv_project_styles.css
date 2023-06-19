@@ -171,5 +171,15 @@ footer img {
     width: 2rem;
     height: 2rem;
     margin: 0 8px;
+    text-align: center;
+    
 }
+
+.footer-content {
+    text-align: center;
+}
+
+
+
+    
 
