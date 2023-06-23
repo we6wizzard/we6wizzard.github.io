@@ -1,73 +1,6 @@
 body {
-    font-family: 'poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-
-.navbar .right img {
-    width: 24px;
-    height: 24px;
-}
-
-.navbar .hamburger {
-    height: 50px;
-    width: 50px;
-    
-
-}
-
-
-
-.bar1
-.bar2
-.bar3 {
-    background-color: black;
-    height: 4px;
-    width: 36px;
-    margin: 3px;
-    border-radius: 15px;
-    
-}
-
-.navbar .hamburger {
-    display: none;
-
-}
-
-.mobileNav {
-    width:80px;
-    background-color: white;
-    height:100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    padding: 16px;
-
-}
-
-.mobileNav img {
-    height: 24px;
-    width: 24px;
-    
-}
-
-.mobileNav a {
-    text-decoration: none;
-    color: black;
-    margin: 16px 0;
-    
-}
-
-.mobileNav a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-    color :#e642f5;
-
-}
-
 
 
 
@@ -76,21 +9,26 @@ body {
     margin: 0 auto;
     padding: 16px;
 
-
 }
+
 
 
 .navbar {
     display: flex;
     justify-content: space-between;
     padding: 64px 0;
+    
 }
+
+
 
 .navbar .left {
     font-size: 32px;
     font-weight: bold;
 
 }
+
+
 
 .navbar .right {
     width: 400px;
@@ -102,24 +40,106 @@ body {
 
 
 
-
 .navbar .right a {
     text-decoration: none;
-    color: black;
+    color: #c24cbe;
 
 }
 
+
+
 .navbar .right a:hover {
     text-decoration: underline;
-    color: #e642f5;
+    font-weight: bold;
+
+}
+
+
+
+.navbar .right img {
+    width: 24px;
+    height: 24px;
+
+}
+
+
+
+.navbar .hamburger {
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
+
+
+
+.bar1, 
+.bar2, 
+.bar3 {
+    background-color: black;
+    height: 4px;
+    width: 36px;
+    margin: 3px;
+    border-radius: 15px;
+
+
+}
+
+
+
+
+.mobilenav{
+    width:80px;
+    background-color:white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: -160px;
+    padding: 16px;
+    transition: transform 0.5s;
+}
+
+
+
+.mobilenav img {
+    width: 24px;
+    height: 24px;
+    
+
+}
+
+
+
+.openDrawer {
+    transform: translateX(-160px);
+}
+
+
+
+.mobilenav a {
+    text-decoration: none;
+    color: #c24cbe;
+    margin: 16px 0;
+}
+
+
+
+.mobilenav a:hover {
+    text-decoration: underline;
     font-weight: bold;
 }
 
 
 
+
 .project-grid {
     display: grid;
-    grid-template-areas:
+    grid-template-areas: 
     "eth eth alphabet"
     "eth eth traveler"
     "astro cube traveler"
@@ -131,44 +151,63 @@ body {
     column-gap: 16px;
     width: 100%;
     
-
 }
+
+
 
 #eth {
     grid-area: eth;
 }
 
+
+
 #alphabet {
     grid-area: alphabet;
 }
+
+
 
 #traveler {
     grid-area: traveler;
 }
 
+
+
 #astro {
     grid-area: astro;
 }
+
+
 
 #cube {
     grid-area: cube;
 }
 
+
+
 #cup {
     grid-area: cup;
 }
+
+
 
 #insta {
     grid-area: insta;
 }
 
+
+
 #foam {
     grid-area: foam;
 }
 
+
+
 #dimensional {
     grid-area: dimensional;
 }
+
+
 
 .project {
     position: relative;
@@ -181,7 +220,7 @@ body {
 }
 
 .project .overlay {
-    background-color: rgba(255,255,255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     position: absolute;
     top: 0;
     left: 0;
@@ -194,7 +233,9 @@ body {
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 2px;
-    opacity: 0; transition: all 0.2s ease;
+    opacity: 0;
+    transition: all 0.2s ease;
+    
 }
 
 .project .overlay:hover {
@@ -204,18 +245,21 @@ body {
 
 .overlay.white {
     color: white;
+
 }
 
 .footer {
     text-align: center;
     padding: 64px;
+
 }
+
+
 
 @media only screen and (max-width: 1100px) {
     .container {
         max-width: 100%;
     }
-
     .project-grid {
         max-width: 100%;
         grid-template-areas:
@@ -224,9 +268,9 @@ body {
         "astro cube"
         "insta insta"
         "cup foam"
-        "dimensional dimensional";
+        "dimensional dimensional"
 
-         
+
 
     }
 }
@@ -235,10 +279,9 @@ body {
     .project-grid {
         margin-top: 100px;
 
-
     }
     .navbar {
-        padding: 16px;
+        padding: 16px 24px;
         box-sizing: border-box;
         position: fixed;
         top: 0;
@@ -246,21 +289,22 @@ body {
         z-index: 3;
         background-color: white;
         width: 100%;
-
+        
     }
     .navbar .right {
         display: none;
-      
     }
-
     .navbar .hamburger {
         display: flex;
         flex-direction: column;
-        justify-items: center;
+        justify-content: center;
         align-items: center;
+
     }
-
-
+    .footer {
+        font-size: 14px;
+        padding: 32px;
+    }
     .project-grid {
         grid-template-areas:
         "eth eth"
@@ -271,60 +315,80 @@ body {
         "cup cup"
         "foam foam"
         "dimensional dimensional";
-    }  
+    }
 
     .project .overlay {
         font-size: 15px;
     }
 
 
-.animateBar1 {
+}
+
+
+
+.animatebar1 {
     animation: flipBar1 1s;
     animation-fill-mode: forwards;
-
 }
 
-.animateBar2 {
+
+
+.animatebar2 {
     animation: fadeBar2 1s;
     animation-fill-mode: forwards;
-    
 }
 
-.animateBar3 {
+
+
+.animatebar3 {
     animation: flipBar3 1s;
     animation-fill-mode: forwards;
 }
 
+
+
 @keyframes flipBar1 {
-    from {
+    from{
         transform: rotate(0);
     }
     to {
-     transform: rotate(45deg) translate(4px, 10px);    }
+        transform: rotate(45deg) translate(4px, 10px);
+    }
+
 }
+
 
 
 
 
 @keyframes fadeBar2 {
-    from {
+    from{
         transform: scaleX(1);
         opacity: 1;
     }
     to {
-      transform: scaleX(0);
-      opacity: 0;
+        transform: scaleX(0);
+        opacity: 0;
     }
 }
 
+
+
 @keyframes flipBar3 {
-    from {
+    from{
         transform: rotate(0);
     }
     to {
-     transform: rotate(-45deg) translate(4px,-10px);
+        transform: rotate(-45deg) translate(4px, -10px);  
     }
 }
+
+
+
+
+
+
+
 
 
 
