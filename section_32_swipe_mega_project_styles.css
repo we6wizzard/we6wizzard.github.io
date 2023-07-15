@@ -352,6 +352,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 9px;
 }
 
 
@@ -1370,7 +1371,7 @@ p {
 
 
     .why-swipe-section .subtitle {
-        margin: 120px 0 0 0;
+        margin: 150px 0 0 0;
     }
 
 
@@ -1554,8 +1555,14 @@ p {
 
 
 
+    .why-swipe-section h2 {
+        margin: 0;
+    }
+
+
+
     .why-swipe-section .subtitle {
-        margin: 250px 0 0 0;
+        margin: 200px 0 0 0;
     }
 
 
