@@ -1,41 +1,121 @@
-h1 {
-    color: #715edb;
-    font-size: 2.5rem;
+
+h1 { 
+    color: #5aa3db;
 }
-
-
 
 h2 {
-    color: #9b9aa1;
     font-size: 1rem;
+    color: grey;
 }
 
 
+.course {
+    color: #5aa3db;
+    font-weight: bold;
+}
 
-.course-title {
-    color: #715edb;
-    font-size: 1rem;
+
+.section-container {
+    width: 100%;
+    max-width: 1144px;
 }
 
 
 
 .two-column {
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+
+}
+
+
+
+ 
+.two-column .col-left {
     width: 50%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-items: center;
     
 
 }
 
 
 
-.box {
-    width: 250px;
+
+.two-column .col-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    
+    
+    
+}  
+
+.featured-project {
+    width: 300px;
     height: 100px;
     border: 2px solid purple;
     border-radius: 10px;
+    position: relative;
+    
+    
+}
+
+
+.project-name {
+    color: grey;
+    font-weight: bold;
+}
+
+.date {
+    color: grey;
+    font-size: 1rem;
+    font-weight: bold;
+
+    
+}
+
+ul {
+    list-style: none;
+    
 }
 
 
 
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #b210e8;
+    font-size: 0.75rem;
+}
+
+a:hover {
+    color: #bb5adb;
+}
+
+
+.course-provider {
+    color: grey;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+
+img .swipe {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 25px;
+    margin: 0;
+    overflow: hidden;
+}
 
