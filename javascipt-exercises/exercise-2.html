@@ -86,14 +86,19 @@
 
     // 11. It's your birthday, you are now 1 year older.
     //     Add 1 to your age and store it back in the age variable
-      age=16
+      age = 16
 
 
 
     // 12. Log to the console the following text.
     //     "Happy Birthday Holly, you are now 16 years old"
     //     You MUST use the variables declared above
-    console.log("Happy Birthday Holly, you are now " + age + " years old");
+    
+    
+    console.log("Happy Birthday " + firstName +","+ " you are now " + age + " years old!!!");
+
+    console.log(`Happy Birthday ${firstName} 🎂, you are now ${age} years old!!!🎁🎈🎉`)
+    
 
 
 
@@ -101,13 +106,20 @@
     //     It should take no parameters
     //     It should return the string "Hello!"
 
-    function sayHello() {}
+    function sayHello() {
+      console.log("Hello");
+   }
 
+    
 
+    
+
+   
 
     // 14. Execute the sayHello function and output the result to the console
-    {console.log("Hello!");
-  }
+
+    sayHello()
+    
 
 
 
@@ -115,22 +127,37 @@
     //     It should take a name parameter
     //     It should return the string "Hello {name}" where name is the value
     //     of the name variable
+   
+    
+  function sayHelloWithName (name)
+  console.log(Charley)
 
 
 
     // 16. Execute the sayHelloWithName function and output the result to the console.
+   sayHelloWithName()
 
 
 
-    // 17. Use a for loop to log to the console the numbers 1 to 10
+   17.// Use a for loop to log to the console the numbers 1 to 10
+  
+   for (let i = 1; i <= 10; i +=1) {
+      console.log(i);
+    }
 
 
 
     // 18. Use a for loop to log to the console the numbers 10 to 1
+    for (let i = 10; i >=1; i -=1) {
+      console.log(i);
+    }
 
 
 
     // 19. Use a for loop to log to the console all even numbers between 10 and 20
+   for (let i = 10; i <=20; i +=2) {
+   console.log(i);
+      }
 
 
 
@@ -140,12 +167,20 @@
     //     favoriteCarColor
     //     Assign the appropriate strings to each of these variables
 
+  
+
+   
+
 
 
     // 21. Create a function called favoriteCar
     //     It should take 3 parameters called make, model and color.
-    //     It should return a string in the following format
-    //     "My favorite car is a {color} {make} {model}."
+    //  It should return a string in the following format
+    // "My favorite car is a {color} {make} {model}."
+
+    
+
+    
 
 
 
@@ -166,7 +201,32 @@
     //    "Is 100 bigger than 5: yes"
 
 
+let result = null
+function addEmojis(message, emoji) {
+let result = emoji +" "+ message +" "+ emoji
 
-  </script>
+console.log(result)
+}
+
+addEmojis("hello", "👋")
+
+
+let isScary = true
+let message = null
+
+if (isScary) {
+  message = "too scary"
+}
+else {
+  message = "I can watch this."
+}
+
+console.log(message)
+  
+console.log("Hello");
+
+document.write("Hello")
+  
+</script>
 </body>
 </html>
