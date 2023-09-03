@@ -129,9 +129,9 @@
     //     of the name variable
    
     
-  function sayHelloWithName (name)
-  console.log(Charley)
-
+  function sayHelloWithName (name) {
+  console.log("Hello Charley")
+  }
 
 
     // 16. Execute the sayHelloWithName function and output the result to the console.
@@ -168,7 +168,9 @@
     //     Assign the appropriate strings to each of these variables
 
   
-
+let favoriteCarMake = "Audi";
+let favoriteCarModel = "A3";
+let favoriteCarColor = "black";
    
 
 
@@ -179,7 +181,12 @@
     // "My favorite car is a {color} {make} {model}."
 
     
+function favoriteCar (color, make, model) {
+  console.log("My favorite car is a black, Audi, A3");
 
+}
+
+favoriteCar()
     
 
 
@@ -189,10 +196,29 @@
     //     It should return "yes" if numToCheck is bigger than numBiggerThan,
     //     Otherwise it should return "no"
 
+    function isBiggerThan (numToCheck, numBiggerThan) {
+      let result;
+      if (numToCheck > numBiggerThan) {
+        result = "Yes";
+
+      }else {
+        result = "No";
+      }
+      return result;
+      
+    }
+    console.log(result);
+
+    
+
 
 
     // 23. Execute the isBiggerThan function with the arguments 5 and 10
     //     Log the output to the console
+
+    isBiggerThan (5, 10);
+
+  
 
 
 
@@ -200,32 +226,11 @@
     //    Log the output to the console in the following format
     //    "Is 100 bigger than 5: yes"
 
-
-let result = null
-function addEmojis(message, emoji) {
-let result = emoji +" "+ message +" "+ emoji
-
-console.log(result)
-}
-
-addEmojis("hello", "👋")
+isBiggerThan(5, 100);
+console.log("Is 100 bigger than 5: Yes");
 
 
-let isScary = true
-let message = null
 
-if (isScary) {
-  message = "too scary"
-}
-else {
-  message = "I can watch this."
-}
-
-console.log(message)
-  
-console.log("Hello");
-
-document.write("Hello")
   
 </script>
 </body>
