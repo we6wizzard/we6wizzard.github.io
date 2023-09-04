@@ -79,26 +79,26 @@
     //     "Hi, my name is Holly Rees and I am 15 years old"
     //     You MUST use the fullName and age variables
     console.log("Hi, my name is "+ fullName + " and I am " + age + " years old");
-    
-   
+
+
 
 
 
     // 11. It's your birthday, you are now 1 year older.
     //     Add 1 to your age and store it back in the age variable
-      age = 16
+    age = 16
 
 
 
     // 12. Log to the console the following text.
     //     "Happy Birthday Holly, you are now 16 years old"
     //     You MUST use the variables declared above
-    
-    
+
+
     console.log("Happy Birthday " + firstName +","+ " you are now " + age + " years old!!!");
 
     console.log(`Happy Birthday ${firstName} 🎂, you are now ${age} years old!!!🎁🎈🎉`)
-    
+
 
 
 
@@ -110,16 +110,16 @@
       console.log("Hello");
    }
 
-    
 
-    
 
-   
+
+
+
 
     // 14. Execute the sayHello function and output the result to the console
 
     sayHello()
-    
+
 
 
 
@@ -127,11 +127,11 @@
     //     It should take a name parameter
     //     It should return the string "Hello {name}" where name is the value
     //     of the name variable
-   
-    
-  function sayHelloWithName (name) {
-  console.log("Hello Charley")
-  }
+
+
+    function sayHelloWithName (name) {
+      console.log("Hello Charley")
+    }
 
 
     // 16. Execute the sayHelloWithName function and output the result to the console.
@@ -139,8 +139,7 @@
 
 
 
-   17.// Use a for loop to log to the console the numbers 1 to 10
-  
+  //  17. Use a for loop to log to the console the numbers 1 to 10
    for (let i = 1; i <= 10; i +=1) {
       console.log(i);
     }
@@ -155,9 +154,9 @@
 
 
     // 19. Use a for loop to log to the console all even numbers between 10 and 20
-   for (let i = 10; i <=20; i +=2) {
-   console.log(i);
-      }
+    for (let i = 10; i <=20; i +=2) {
+      console.log(i);
+    }
 
 
 
@@ -166,12 +165,10 @@
     //     favoriteCarModel
     //     favoriteCarColor
     //     Assign the appropriate strings to each of these variables
+    let favoriteCarMake = "Audi";
+    let favoriteCarModel = "A3";
+    let favoriteCarColor = "black";
 
-  
-let favoriteCarMake = "Audi";
-let favoriteCarModel = "A3";
-let favoriteCarColor = "black";
-   
 
 
 
@@ -179,15 +176,18 @@ let favoriteCarColor = "black";
     //     It should take 3 parameters called make, model and color.
     //  It should return a string in the following format
     // "My favorite car is a {color} {make} {model}."
+    function favoriteCar (color, make, model) {
+      // Use the 3 parameter passed in to create the return string. You
+      // can use either string concatenation or interpolation to do this.
+      console.log("My favorite car is a black, Audi, A3");
 
-    
-function favoriteCar (color, make, model) {
-  console.log("My favorite car is a black, Audi, A3");
+    }
 
-}
+    // The favoriteCar function takes in 3 arguments, pass in values for these
+    // and capture the return value from the function into a variable so it
+    // can be logged to the console.
+    favoriteCar()
 
-favoriteCar()
-    
 
 
 
@@ -205,33 +205,39 @@ favoriteCar()
         result = "No";
       }
       return result;
-      
-    }
-    console.log(result);
 
-    
+    }
+    // This line of code was causing the run-time error. You are trying to access the result
+    // variable outside of the function it was created it. We haven't covered variable scope
+    // yet (the rules that define when and where a variable can be accessed).
+    // Commenting this line of code out so the error is resolved.
+    // console.log(result);
+
+
 
 
 
     // 23. Execute the isBiggerThan function with the arguments 5 and 10
     //     Log the output to the console
 
-    isBiggerThan (5, 10);
+    // The isBigegrThan function returns the value of the result variable. We
+    // can capture this value by assigning it to a variable.
+    let result = isBiggerThan(5, 10);
+    console.log(result)
 
-  
+
 
 
 
     // 24. Execute the isBiggerThan function with the arguments 100 and 5.
     //    Log the output to the console in the following format
     //    "Is 100 bigger than 5: yes"
-
-isBiggerThan(5, 100);
-console.log("Is 100 bigger than 5: Yes");
-
+    isBiggerThan(5, 100);
+    console.log("Is 100 bigger than 5: Yes");
 
 
-  
+
+
 </script>
 </body>
 </html>
