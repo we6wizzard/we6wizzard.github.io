@@ -161,6 +161,20 @@ body {
 
 }
 
+.totals-table {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.totals-table td:last-child {
+    text-align: right;
+}
+
+.final-totals {
+    font-weight: bold;
+}
+
 
 
 
