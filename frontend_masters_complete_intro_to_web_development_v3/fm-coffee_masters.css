@@ -1,0 +1,175 @@
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EFEFEF;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.page-layout {
+    display: grid;
+    row-gap: 30px;
+    column-gap: 30px;
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+    grid-template-areas: 
+       "order payment"
+       "total total";
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-nav {
+    background-color: #43281C;
+    color: #FBF2C0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.logo {
+    height: 25px;
+    position: relative;
+    top: 3px;
+}
+
+.box {
+    background-color: #EEE1D5;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    padding: 20px;
+    margin-bottom: 28px;
+    
+    width: 100%;
+}
+
+.box-titles {
+    color: #885A2D;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+.order {
+    grid-area: order;
+}
+
+.payment {
+    grid-area: payment;
+}
+
+.total {
+    grid-area: total;
+}
+
+.item-option {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    border-bottom: 2px solid #DDB892;
+    display: grid;
+    padding: 10px 0;
+
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: 
+       "quantity item-title price"
+       "quantity options price";
+    
+       row-gap: 8px;
+
+}
+
+.item:last-child{
+    border-bottom: none;
+
+}
+
+.quantity {
+    grid-area: quantity;
+}
+
+.item-title {
+    grid-area: item-title;
+    font-weight: bold;
+}
+
+.price {
+    grid-area: price;
+    font-weight: bold;
+}
+
+.user-input {
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px #885A2D solid;
+    padding: 8px;
+    font-size: 18px;
+    text-indent: 18px;
+    width: 100%;
+
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user-input-label {
+    color: #885A2D;
+    background-color: #EEE1D5;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+}
+
+.short-input {
+    max-width: 200px;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.totals-table {
+    margin: 20px;
+
+}
+
+
+.checkout {
+   background-color: #deb993;
+   width: 100%;
+   border-radius: 100px;
+   font-size: 16px;
+   border: none;
+   padding: 10px 30px;
+
+}
+
+
+
+
+
+
+
+    
+
+
+
+
+
