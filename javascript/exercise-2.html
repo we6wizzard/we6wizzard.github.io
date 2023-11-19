@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Exercises 2</title>
+</head>
+
+<body>
+
+  <script>
+    // 0. Log "Hello world" to the console
+    //    What data type is "Hello world"?
+    console.log("Hello World");
+    //String
+
+
+
+    // 1. Log 10 to the console
+    //    What data type is 10?
+    console.log(10);
+    //Number
+
+
+
+    // 2. Log true to the console
+    //    What data type is true?
+    console.log(true);
+    //Boolean;
+
+
+
+
+    // 3. Create a variable called firstName and assign "Holly" to it
+    //    What data type is stored in the firstName variable?
+    let firstName = "Holly";
+    //String
+
+
+
+    // 4. Log the firstName variable to the console
+    console.log(firstName);
+
+
+
+    // 5. Create a variable called lastName and assign "Rees" to it
+    //    What data type is stored in the lastName variable?
+    let lastName = "Rees";
+    //String
+
+
+
+    // 6. Output the lastName variable to the console
+    console.log(lastName);
+
+
+
+    // 7. Using the firstName and lastName variable, output your full name
+    //    to the console. The expected output is "Holly Rees"
+    console.log (firstName +" "+ lastName);
+
+
+
+    // 8. Create a variable called fullName and assign to it your fullName
+    //    You MUST use the firstName and lastName variable
+    let fullName = firstName +" "+ lastName;
+
+
+
+    // 9. Create a variable called age and assign your age to it.
+    //    What data type is stored in the age variable
+    let age = 15
+    //Number
+
+
+
+    // 10. Log to the console the following text
+    //     "Hi, my name is Holly Rees and I am 15 years old"
+    //     You MUST use the fullName and age variables
+    console.log("Hi, my name is "+ fullName + " and I am " + age + " years old");
+
+
+
+
+
+    // 11. It's your birthday, you are now 1 year older.
+    //     Add 1 to your age and store it back in the age variable
+    age = 16
+
+
+
+    // 12. Log to the console the following text.
+    //     "Happy Birthday Holly, you are now 16 years old"
+    //     You MUST use the variables declared above
+
+
+    console.log("Happy Birthday " + firstName +","+ " you are now " + age + " years old!!!");
+
+    console.log(`Happy Birthday ${firstName} 🎂, you are now ${age} years old!!!🎁🎈🎉`)
+
+
+
+
+    // 13. Create a function called "sayHello".
+    //     It should take no parameters
+    //     It should return the string "Hello!"
+
+    function sayHello() {
+      console.log("Hello");
+   }
+
+
+
+
+
+
+
+    // 14. Execute the sayHello function and output the result to the console
+
+    sayHello()
+
+
+
+
+    // 15. Create another function called "sayHelloWithName"
+    //     It should take a name parameter
+    //     It should return the string "Hello {name}" where name is the value
+    //     of the name variable
+
+
+    function sayHelloWithName (name) {
+      console.log("Hello Charley")
+    }
+
+
+    // 16. Execute the sayHelloWithName function and output the result to the console.
+   sayHelloWithName()
+
+
+
+  //  17. Use a for loop to log to the console the numbers 1 to 10
+   for (let i = 1; i <= 10; i +=1) {
+      console.log(i);
+    }
+
+
+
+    // 18. Use a for loop to log to the console the numbers 10 to 1
+    for (let i = 10; i >=1; i -=1) {
+      console.log(i);
+    }
+
+
+
+    // 19. Use a for loop to log to the console all even numbers between 10 and 20
+    for (let i = 10; i <=20; i +=2) {
+      console.log(i);
+    }
+
+
+
+    // 20. Create 3 variables, each should be on a separate line. They should be called
+    //     favoriteCarMake
+    //     favoriteCarModel
+    //     favoriteCarColor
+    //     Assign the appropriate strings to each of these variables
+    let favoriteCarMake = "Audi";
+    let favoriteCarModel = "A3";
+    let favoriteCarColor = "black";
+
+
+
+
+    // 21. Create a function called favoriteCar
+    //     It should take 3 parameters called make, model and color.
+    //  It should return a string in the following format
+    // "My favorite car is a {color} {make} {model}."
+    function favoriteCar (color, make, model) {
+      // Use the 3 parameter passed in to create the return string. You
+      // can use either string concatenation or interpolation to do this.
+      console.log("My favorite car is a black, Audi, A3");
+
+    }
+
+    // The favoriteCar function takes in 3 arguments, pass in values for these
+    // and capture the return value from the function into a variable so it
+    // can be logged to the console.
+    favoriteCar()
+
+
+
+
+    // 22. Create a function called isBiggerThan
+    //     It should take 2 parameters called numToCheck and numBiggerThan
+    //     It should return "yes" if numToCheck is bigger than numBiggerThan,
+    //     Otherwise it should return "no"
+
+    function isBiggerThan (numToCheck, numBiggerThan) {
+      let result;
+      if (numToCheck > numBiggerThan) {
+        result = "Yes";
+
+      }else {
+        result = "No";
+      }
+      return result;
+
+    }
+    // This line of code was causing the run-time error. You are trying to access the result
+    // variable outside of the function it was created it. We haven't covered variable scope
+    // yet (the rules that define when and where a variable can be accessed).
+    // Commenting this line of code out so the error is resolved.
+    // console.log(result);
+
+
+
+
+
+    // 23. Execute the isBiggerThan function with the arguments 5 and 10
+    //     Log the output to the console
+
+    // The isBigegrThan function returns the value of the result variable. We
+    // can capture this value by assigning it to a variable.
+    let result = isBiggerThan(5, 10);
+    console.log(result)
+
+
+
+
+
+    // 24. Execute the isBiggerThan function with the arguments 100 and 5.
+    //    Log the output to the console in the following format
+    //    "Is 100 bigger than 5: yes"
+    isBiggerThan(5, 100);
+    console.log("Is 100 bigger than 5: Yes");
+
+
+
+
+</script>
+</body>
+</html>
