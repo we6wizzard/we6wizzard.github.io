@@ -8,3 +8,4 @@ var drawCats = function (howManyTimes) {
 };
 
 drawCats(10); //You can put any number here instead of 10.
+

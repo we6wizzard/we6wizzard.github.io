@@ -37,7 +37,7 @@ h4 {
     height: 100px;
     width: 250px;
     border-radius: 10px;
-    border: 3px solid purple;
+    border: 3px solid black;
 
 }
 
@@ -49,7 +49,7 @@ h4 {
     height: 100px;
     width: 250px;
     border-radius: 10px;
-    border: 3px solid purple;
+    border: 3px solid black;
 }
 
 .swipe:hover {
@@ -66,13 +66,13 @@ h4 {
     height: 100px;
     width: 250px;
     border-radius: 10px;
-    border: 3px solid purple;
+    border: 3px solid black;
 }
 
 
 
 .grid-container {
-    border: 2px solid purple;
+    border: 2px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 10px;
@@ -86,7 +86,7 @@ h4 {
     align-items: center;
     justify-content: center;
     margin: 20px;
-    border: 2px solid purple;
+    border: 2px solid black;
     height: 100px;
     width: 250px;
     border-radius: 10px;
@@ -95,7 +95,7 @@ h4 {
 .links-container {
     display: grid;
     flex-direction: row;
-    border: 2px solid purple;
+    border: 2px solid black;
     border-radius: 10px;
     max-width: 50%;
     margin: 10px;
@@ -118,10 +118,24 @@ ul {
 }
 
 
-a:hover {
-    color: rgb(110, 9, 25);
+ a:hover {
     font-weight: bold;
-}
+    color: blue;
+ }
+
+ .course-date {
+    display: flex;
+   
+ }
+
+ .course {
+    align-items: flex-start;
+ }
+
+ .date {
+    align-items: flex-end;
+ }
+
 
 
 
