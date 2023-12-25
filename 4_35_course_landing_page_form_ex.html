@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Landing Page</title>
+
+
+    <style>
+
+        form {
+            border: 3px solid orange;
+            margin: 100px 300px 100px 300px;
+            padding: 100px 0 100px 100px;
+            border-radius: 15px;
+            
+        }
+
+        h1 {
+            text-align: center;
+        }
+        button {
+            border-radius: 5px;
+            background-color: orange;
+            font-weight: bold;
+            margin: 0 0 0 305px;
+            padding: 5px 10px 5px 10px;
+            
+        }
+
+
+        input, textarea, select {
+            border-radius: 5px;
+            
+        }
+
+        label {
+            color: orange;
+            font-weight: bold;
+        }
+
+        
+        #title {
+            margin: 0 0 0 200px;
+        }
+
+        #description {
+            margin: 0 0 0 155px;
+        }
+
+        #level {
+            margin: 0 0 0 215px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <h1>Course Landing Page</h1>
+    
+    <form action="https://www.google.com">
+    
+    <div>
+        <label for="title">
+        Course Title
+        </label>
+        
+        <input 
+        type="text" 
+        id="title" 
+        name="title" 
+        placeholder="Course Title"
+        required>
+    </div>
+    <br>
+
+    <div>
+        <label for="description">
+        Course Description
+        </label>
+
+        <textarea 
+        placeholder="Course Description" 
+        id="description" 
+        name="description"
+        rows="10"
+        cols="10"
+        required></textarea>
+    </div>
+    <br>
+
+    
+    
+    <div>
+        <label for="level">
+        Skill Level
+        </label>
+
+
+        
+        
+        <select id="level">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+            <option value="all levels">All Levels</option>
+        </select>
+
+    </div>
+    <br>
+
+
+    <div>
+        <label for="publish">
+        Ready to Publish the Course?
+        </label>
+
+        <input 
+        type="checkbox"
+        id="publish"
+        name="publish"
+        required>
+    </div>
+    <br>
+
+    <div>
+        <label for="t+c's">
+            Agree to Terms and Conditions?
+        </label>
+
+        <input
+        type="checkbox"
+        id="t+c's"
+        name="t+c's"
+        required>
+    </div>
+    
+
+    <button>Submit</button>
+       
+    </form>
+
+
+</body>
+</html>
