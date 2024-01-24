@@ -1,6 +1,6 @@
 let runningTotal = "0";  //tracks math operations. Have to keep some sort of background value somehwere for sums such as 5 + 10 + 30 + 2 etc to keep track of sum.
 let buffer ="0"; //buffer, refers to screen
-let previousOperator; //Have to keep track of what the last thing you tried to do, was...so "+" or "/" etc in this varaible.
+let previousOperator = null; //Have to keep track of what the last thing you tried to do, was...so "+" or "/" etc in this varaible.
 const screen = document.querySelector(".screen"); //linked with/the variable for the renderer function below. 
 
 
@@ -17,11 +17,11 @@ function buttonClick(value) {  //(value) will be the button "8" or "9", "2" or "
                   
 }
 
-function handleNumber(value) { //function to handle the numbers
+function handleNumber(number) { //function to handle the numbers
     if (buffer === "0") {
-        buffer = value;
+        buffer = number;
     }else {
-        buffer += value;
+        buffer += number;
     }
 }
 
@@ -53,52 +53,57 @@ buffer = "0"; //(after whatever sum input you do, say you input 56 +..the screen
 }
 
 
-function flushOperation(intBuffer) { //a function to do whatever its supposed to do/a function to do the addition or subratction or whatever. Will take in some sort
-                                    //of intBuffer so whatever is passed into the (intBuffer) parameter above when this flushOperation (intBuffer) function is called
+function flushOperation(intBuffer) {           //a function to do whatever its supposed to do/a function to do the addition or subratction or whatever. Will take in some sort
+                                               //of intBuffer so whatever is passed into the (intBuffer) parameter above when this flushOperation (intBuffer) function is called
     if (previousOperator === "+") {
-        runningTotal += intBuffer;   // runningTotal + intBuffer
+        runningTotal += intBuffer;               // runningTotal + intBuffer
     } else if (previousOperator === "-") {  
-        runningTotal -= intBuffer;   //runningTotal - intBuffer
+        runningTotal -= intBuffer;               //runningTotal - intBuffer
     } else if (previousOperator === "x") {
-        runningTotal *= intBuffer;  //runningTotal * intBuffer
-    } else {
-        runningTotal /= intBuffer; //runningTotal / intBuffer
+        runningTotal *= intBuffer;               //runningTotal * intBuffer
+    } else if (previousOperator === "➗") {
+        runningTotal /= intBuffer;               //runningTotal / intBuffer
     }
 }
 
 //if previous operator is strictly equal to "+" then do "+". If previousOperator triple equals to "-", then do "-" etc where the integer values stored in (intBuffer)
 // get added or subratcted etc to thr current running total. 
 
-function handleSymbol(value) {   //if symbol triple equals "C" then do this. Think of break as a closing curly brace. Its saying "I'm done with my switch statement"
-    switch (value){
+function handleSymbol(symbol) {   //if symbol triple equals "C" then do this. Think of break as a closing curly brace. Its saying "I'm done with my switch statement"
+    switch (symbol){
         case "C":
             buffer = "0";
-            runningTotal = 0;
             break;
         case "=":
-            if (previousOperator === null) {   //null - the absence of anything. Different from zero. If you have 0 of something - you have zero quantity of something.
-                                               //If you have null you have nothing, no concept of anything. No previousOperator here in this case. 
-                                               //Need two numbers to do math, so if you don't have two number - return right away. Otherwise we want to flush the operation
-                                               //straight away
+            if (previousOperator === null) {
+               return 
             }
 
             flushOperation(parseInt(buffer));
-            previousOperator = null
-            buffer = +runningTotal;
-            runningTotal = "0";
+            previousOperator = null;
+            buffer = "" + runningTotal;
+            runningTotal = 0;
             break;
+            
+                                               //null - the absence of anything. Different from zero. If you have 0 of something - you have zero quantity of something.
+                                               //If you have null you have nothing, no concept of anything. No previousOperator here in this case. 
+                                               //Need two numbers to do math, so if you don't have two number - return right away. Otherwise we want to flush the operation
+                                               //straight away. Buffer set equal to zero, goes back to buttonClick function and at very end of it, it calls rerender. Thats why 
+                                               //here all we have to do is set buffer equal to 0 and then the rerender at end of buttonClick function will handle setting it to 0.
+
         case "🔙":
-            if (buffer.length === "1") {
+            if (buffer.length === 1) {
                 buffer = "0";
             } else {
-                buffer = buffer.substring("0", buffer.length - 1);
+                buffer = buffer.substring("0", buffer.length - 1);  //take the string and chop off the last number so if you have 954 
+                                                                    //its going to take 9 and 5 and cut off the 4.
             }
             break;
         case "+":
         case "-":
         case "x":
         case "➗":
-            handleMath(value); //calls the handleMath function
+            handleMath(symbol); //calls the handleMath function. Takes in the symbol that we got here.
             break;
     }
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza and Price Generator</title>
+    <link rel="stylesheet" href="pizza_and_price_generator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <img class="pizza-img" src="../javascript/images/pizza.jpg">
+
+    <div>
+        <label for="side-select">Select Sides</label><br>
+    <select id="side-select">
+        <option value=""></option>
+        <option value="strippers-and-fries-combo">Strippers and Fries Combo</option>
+        <option value="loaded-fries">Loaded Fries</option>
+        <option value="Garlic Bread">Garlic Bread</option>
+        <option value="cheesy-garlic-bread">Cheesy Garlic Bread</option>
+        <option value="chicken-goujouns">Chicken Goujons</option>
+        <option value="fries">Fries</option>
+        <option value="chicken-wings">Chicken Wings</option>
+    </select>
+    </div>
+
+
+
+    <div>
+        <label for="pizza_select">Select Pizza</label><br>
+    <select id="pizza-select">
+        <option value=""></option>
+        <option value="pepperoni-passion">Pepperoni Passion</option>
+        <option value="cheese-and-tomato">Cheese and Tomato</option>
+        <option value="texas-bbq">Texas BBQ</option>
+        <option value="plant-based-vegi-supreme">Plant-Based Vegi Supreme</option>
+        <option value="hawaiian-pizza">Hawaiian Pizza</option>
+        <option value="garlic-bread-pizza">Garlic Bread Pizza</option>
+    </select>
+    </div>
+    
+    <div class="flex-container" id="menu">
+        <!--display food items here-->
+    </div>
+
+    <div class="cart">
+        <h2>🛒</h2>
+
+        <ul id="cart-items">
+            <!--display cart items here-->
+        </ul>
+
+        <p>Total £<span id="cart-total">0.00</span></p>
+        <button class="button" onClick="checkout()">Checkout</button>
+    </div>
+
+    <script src="pizza_and_price_generator.js"></script>
+</body>
+</html>

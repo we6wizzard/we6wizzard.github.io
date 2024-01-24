@@ -1,21 +1,62 @@
  // Menu items organised by cuisine
  const menuItems = {
     italian: [
-        { name: "Pizza", price: 10.99, image: "https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg" },
-        { name: "Spaghetti Carbonara", price: 7.99, image: "https://images.pexels.com/photos/6223191/pexels-photo-6223191.jpeg" },
-      { name: "Truffle risotto", price: 11.99, image: "https://images.pexels.com/photos/6406460/pexels-photo-6406460.jpeg" }
+        { name: "Pizza", 
+        price: 10.99, 
+        image: "https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg" },
+        
+        
+        { name: "Spaghetti Carbonara", 
+        price: 7.99, 
+        image: "https://images.pexels.com/photos/6223191/pexels-photo-6223191.jpeg" },
+      
+      
+      
+        { name: "Truffle risotto", 
+        price: 11.99, 
+        image: "https://images.pexels.com/photos/6406460/pexels-photo-6406460.jpeg" }
     ],
+    
+    
+    
     indian: [
-        { name: "Chikken Tikka Masala", price: 8.99, image: "https://images.pexels.com/photos/12737914/pexels-photo-12737914.jpeg" },
-        { name: "Saag Aloo", price: 7.99, image: "https://images.pexels.com/photos/15014917/pexels-photo-15014917/free-photo-of-aloo-dum.jpeg" },
+        
+        { name: "Chikken Tikka Masala", 
+        price: 8.99, 
+        image: "https://images.pexels.com/photos/12737914/pexels-photo-12737914.jpeg" },
+        
+        
+        
+        { name: "Saag Aloo", 
+        price: 7.99, 
+        image: "https://images.pexels.com/photos/15014917/pexels-photo-15014917/free-photo-of-aloo-dum.jpeg" },
     ],
+    
+    
+    
     chinese: [
-        { name: "Egg fried rice", price: 4.99, image: "https://www.seriouseats.com/thmb/BJjCEDw9OZe95hpZxmNcD3rJnHo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230529-SEA-EggFriedRice-AmandaSuarez-hero-c8d95fbf69314b318bc279159f582882.jpg" },
-        { name: "Chow mein", price: 6.99, image: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chow-mein-c48a006.jpg" },
+        
+        { name: "Egg fried rice", 
+        price: 4.99, 
+        image: "https://www.seriouseats.com/thmb/BJjCEDw9OZe95hpZxmNcD3rJnHo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230529-SEA-EggFriedRice-AmandaSuarez-hero-c8d95fbf69314b318bc279159f582882.jpg" },
+        
+        
+        { name: "Chow mein", 
+        price: 6.99, 
+        image: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chow-mein-c48a006.jpg" },
     ],
+    
+    
+    
     mexican: [
-        { name: "Burrito", price: 3.99, image: "https://cdn.britannica.com/13/234013-050-73781543/rice-and-chorizo-burrito.jpg" },
-        { name: "Tacos", price: 4.99, image: "https://www.finedininglovers.com/sites/g/files/xknfdk626/files/2021-09/carne-asada-tacos-recipe%C2%A9iStock.jpg" },
+        { name: "Burrito", 
+        price: 3.99, 
+        image: "https://cdn.britannica.com/13/234013-050-73781543/rice-and-chorizo-burrito.jpg" },
+       
+       
+        { name: "Tacos", 
+        price: 4.99, 
+        image: "https://www.finedininglovers.com/sites/g/files/xknfdk626/files/2021-09/carne-asada-tacos-recipe%C2%A9iStock.jpg" },
     ],
 };
 

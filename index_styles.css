@@ -1,6 +1,6 @@
-* {
-    box-sizing: border-box;
-}
+
+    
+
 
 body {
     padding: 0;
@@ -37,8 +37,14 @@ h4 {
     height: 100px;
     width: 250px;
     border-radius: 10px;
-    border: 3px solid black;
+    
 
+}
+
+.calculator {
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
 }
 
 .coffee-cup:hover {
@@ -73,8 +79,9 @@ h4 {
 
 .grid-container {
     border: 2px solid black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
     border-radius: 10px;
     max-width: 50%

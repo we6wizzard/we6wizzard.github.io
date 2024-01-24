@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 50px;
+    padding: 0;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    
+}
+
+.name {
+    font-size: 20px;
+    margin: 0 0 0 50px;
+    color:  #047ae0;
+}
+
+.course {
+    font-size: 15px;
+    margin: 0 0 20px 50px;
+    color: grey;
+}
+
+.date {
+    padding: 0 0 0 180px ;
+    font-size: 20px;
+    color: grey;
+    margin-right: 200px;
+    margin-bottom: 39px;
+    
+    
+}
+
+hr {
+    margin-right: 100px;
+}
+
+page-layout {
+    margin-right: 200px;
+}
+
+
+
+
+.coffee-cup,
+.wordle,
+.swipe,
+.blog,
+.cert-1,
+.cert-2 {
+    height: 150px;
+    width: 400px;
+    border: 3px solid grey;
+    border-radius: 10px;
+        
+}
+
+.coffee-cup:hover,
+.wordle:hover,
+.swipe:hover,
+.blog:hover,
+.cert-1:hover
+.cert-2:hover {
+    opacity: 0.5;
+}
+
+.title-one {
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #047ae0;
+}
+
+.title-two {
+    margin-top: 0;
+    font-size: 15px;
+    color: grey;
+    
+
+}
+
+.flexbox {
+    display: flex;
+    height: 300px;
+    background-color: #e6e6fa;
+    margin-right: 100px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    
+}
+
+.left {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+}
+
+.right {
+    justify-content: flex-end;
+    padding: 40px 0 46px 0;
+  
+    
+    
+}
+
+ul {
+    list-style-type:  none;
+    column-count: 2;
+    padding: 0 300px 0 0;
+}
+
+
+
+   
+
+
+li a{
+    text-decoration: none;
+    padding: 0 0 0 30px;
+}
+
+li a:hover { 
+    color: orange;
+    font-weight: bold;
+}
+
+.completed-projects {
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin-right: 100px;
+    padding: 30px
+    
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    body
+}
+
+
