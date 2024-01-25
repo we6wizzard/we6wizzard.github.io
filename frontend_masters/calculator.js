@@ -1,6 +1,6 @@
 let runningTotal = "0";  //tracks math operations. Have to keep some sort of background value somehwere for sums such as 5 + 10 + 30 + 2 etc to keep track of sum.
 let buffer ="0"; //buffer, refers to screen
-let previousOperator = null; //Have to keep track of what the last thing you tried to do, was...so "+" or "/" etc in this varaible.
+let previousOperator = null; //Have to keep track of what the last thing you tried to do, was...so "+" or "/" etc in this variable.
 const screen = document.querySelector(".screen"); //linked with/the variable for the renderer function below. 
 
 

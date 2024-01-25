@@ -15,33 +15,19 @@
     <img class="pizza-img" src="../javascript/images/pizza.jpg">
 
     <div>
-        <label for="side-select">Select Sides</label><br>
-    <select id="side-select">
+        <label for="select">Select</label><br>
+        <select id="cuisine-select" onChange="changeCuisine()">
         <option value=""></option>
-        <option value="strippers-and-fries-combo">Strippers and Fries Combo</option>
-        <option value="loaded-fries">Loaded Fries</option>
-        <option value="Garlic Bread">Garlic Bread</option>
-        <option value="cheesy-garlic-bread">Cheesy Garlic Bread</option>
-        <option value="chicken-goujouns">Chicken Goujons</option>
-        <option value="fries">Fries</option>
-        <option value="chicken-wings">Chicken Wings</option>
+        <option value="sides">Sides</option>
+        <option value="pizzas">Pizzas</option>
+        <option value="drinks">Drinks</option>
+      
     </select>
     </div>
 
 
 
-    <div>
-        <label for="pizza_select">Select Pizza</label><br>
-    <select id="pizza-select">
-        <option value=""></option>
-        <option value="pepperoni-passion">Pepperoni Passion</option>
-        <option value="cheese-and-tomato">Cheese and Tomato</option>
-        <option value="texas-bbq">Texas BBQ</option>
-        <option value="plant-based-vegi-supreme">Plant-Based Vegi Supreme</option>
-        <option value="hawaiian-pizza">Hawaiian Pizza</option>
-        <option value="garlic-bread-pizza">Garlic Bread Pizza</option>
-    </select>
-    </div>
+   
     
     <div class="flex-container" id="menu">
         <!--display food items here-->
@@ -55,7 +41,7 @@
         </ul>
 
         <p>Total £<span id="cart-total">0.00</span></p>
-        <button class="button" onClick="checkout()">Checkout</button>
+        <button onClick="checkout()">Checkout</button>
     </div>
 
     <script src="pizza_and_price_generator.js"></script>
