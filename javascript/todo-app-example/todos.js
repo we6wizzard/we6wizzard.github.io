@@ -31,12 +31,17 @@ function renderTodos() {
     // Get the todo from the array by it's index.
     let todoItem = todos[i];
 
-    let newElement = document.createElement('li');
+    let newElement = document.createElement("li");
     newElement.innerText = todoItem;
 
     todoListElement.appendChild(newElement);
   }
 }
+
+//addEventListener("click", function (event) {
+  
+
+
 
 // Get a reference to the <ol class="todo-list"></ol> element that
 // we created in our HTML.
@@ -50,10 +55,10 @@ function renderTodos() {
 // A reference to the <ol class="todo-list"></ol> will be stored
 // in the todoListElement variable so we can use this in other parts of
 // our code.
-let todoListElement = document.querySelector('.todo-list');
+let todoListElement = document.querySelector(".todo-list");
 
 // Get a reference to the <input class="new-todo" /> element.
-let newTodoElement = document.querySelector('.new-todo');
+let newTodoElement = document.querySelector(".new-todo");
 
 // On the input element, add an event listener so the browser will
 // inform our code when a user event has happened, in this case
@@ -64,7 +69,7 @@ let newTodoElement = document.querySelector('.new-todo');
 // An event argument is passed into our callback function so we
 // can get further information about the event that happened, such as
 // which key which pressed
-newTodoElement.addEventListener('keyup', function (event) {
+newTodoElement.addEventListener("keyup", function (event) {
   // Check if the keyCode on the event is equal to 13. 13 is the keyCode
   // for the enter key. Each key has it's own number
   let wasEnterPressed = event.keyCode == 13;
@@ -89,7 +94,7 @@ newTodoElement.addEventListener('keyup', function (event) {
     // user can see the new todo
     renderTodos();
   }
-})
+});
 
 
 // Render the todos based on their initial value.
