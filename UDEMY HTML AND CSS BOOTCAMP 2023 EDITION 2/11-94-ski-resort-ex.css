@@ -1,0 +1,50 @@
+body {
+    font-family: "sans-serif";
+    padding: 0;
+    margin: 0;
+    background-color: #463D36;
+}
+
+.container {
+    background-color: white;
+    height: 400px;
+    width: 600px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 20px;
+
+}
+
+
+    
+    
+
+
+.container h2 {
+    color: #A6192E;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+.container .btn {
+    background-color: #463D36;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 30px 40px;
+}
+
+.container h1 {
+    color: #463D36;
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: 100;
+    
+    
+}
+
+.container p {
+    font-size: 28px;
+    font-weight: lighter;
+}
