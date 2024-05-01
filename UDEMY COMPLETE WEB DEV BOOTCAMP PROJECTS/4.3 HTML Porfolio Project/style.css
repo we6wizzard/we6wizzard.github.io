@@ -1,0 +1,41 @@
+.charley-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.charley {
+    width: 300px;
+    height: 300px;
+}
+
+a {
+    color: purple;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: orange;
+    font-weight: bold;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    padding: 50px;
+}
