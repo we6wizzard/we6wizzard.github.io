@@ -1,0 +1,15 @@
+body {
+    font-family: "Cormorant", serif;
+}
+
+h1 {
+    display: inline-block;
+}
+
+.links {
+    display: inline-block;
+}
+
+.links li {
+    display: inline-block;
+}
