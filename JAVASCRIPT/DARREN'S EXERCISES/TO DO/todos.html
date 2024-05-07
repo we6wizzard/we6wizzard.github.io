@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo</title>
+  <link rel="stylesheet" href="todos.css">
+</head>
+<body>
+  <div class="container">
+    <input class="new-todo" type="text" placeholder="What is your todo?" />
+
+    <!--
+      This will contain the todos the user adds.
+      These will be added to the DOM dynamically using JS.
+    -->
+    <ol class="todo-list"></ol>
+  </div>
+
+  <!--
+    Load in the JavaScript file. Not that this is at the end of the body for a few reasons
+    1. The JS file is downloaded and executed after the above HTML is parsed and created
+       in the DOM which means we can safely access the elements in the DOM via JS.
+       If this JS file was instead in the head tag, the browser would download and execute the JS file before the
+       HTML elements in the body have been parsed and created in the DOM (remember the
+       browser reads the HTML from top to bottom). This means calls to document.querySelector()
+       in JS would fail to find any elements as they have not been created in the DOM yet.
+
+    2. When the browser encounters a script tag, it will pause parsing of the HTML so it can
+       download and execute the JS file. This can cause a delay in the webpage showing to the user.
+       If it takes half a second or a second to download and parse the JS file the user will see a blank
+       page for half a second. This might not seem like much of a delay but even the smallest
+       of delays can impact the user experience.
+
+    Note: There are newer ways to achieve the same functionality as placing the script
+    tag at the end of the body such as using the defer attribute on the script tag. There
+    is also an async tag.
+
+    Further reading: https://javascript.info/script-async-defer
+  -->
+  <script src="todos.js"></script>
+</body>
+
+</html>
