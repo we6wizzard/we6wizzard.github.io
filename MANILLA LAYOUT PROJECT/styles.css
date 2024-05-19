@@ -1,0 +1,180 @@
+
+body {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.container {
+    display: grid; 
+    grid-template-rows: 200px 900px 500px 500px 300px;
+    grid-template-columns: 3fr 1.5fr 2fr 2fr ;
+    background-color: #E4E4E4;
+    gap: 20px;
+    grid-template-areas: 
+    "header header header header"
+    "nav main main aside-right"
+    "aside-left main main aside-right"
+    "aside-left section section section"
+    "footer footer footer footer";
+}
+
+
+
+header {
+    grid-area: header;
+    background-color: #E4E4E4;
+    border: 2px solid midnightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+h1 {
+    padding-top: 60px;
+    padding-left: 50px;
+}
+
+h2 {
+    padding-bottom: 60px;
+    padding-left: 50px;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+button {
+    background-color: lightskyblue;
+    border-radius: 5px;
+    border: 2px solid midnightblue;
+    padding: 10px 40px;
+    color: midnightblue;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+.nav-1 {
+    grid-area: nav;
+    background-color:  #E4E4E4;
+    border: 2px solid midnightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    
+}
+
+.nav-1 a {
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 10px;
+    
+
+}
+
+
+
+
+
+
+.aside-left {
+    grid-area: aside-left;
+    border: 2px solid midnightblue;
+}
+
+.aside-right {
+    grid-area: aside-right;
+    border: 2px solid midnightblue;
+}
+
+
+
+main {
+    grid-area: main;
+    background-color:  #E4E4E4;
+    border: 2px solid midnightblue;
+}
+
+main img {
+    height: 250px;
+    width: 250px;
+}
+
+
+
+
+section {
+    grid-area: section;
+    background-color:  #E4E4E4;
+    border: 2px solid midnightblue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+section img{
+    height: 250px;
+    width: 450px;
+    
+}
+
+section h2 {
+    align-self: flex-start;
+    margin-bottom: 30px;
+}
+    
+
+
+    
+
+
+
+footer {
+    grid-area: footer;
+    background-color: #E4E4E4;
+    border: 2px solid midnightblue;
+    padding-left: 50px;
+    padding-top: 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+
+    
+}
+
+
+footer a {
+    text-decoration: none;
+
+}
+
+.nav-2 a {
+    display: flex;
+    flex-direction: column;
+}
+
+
+   
+
+
+
+
+
+
