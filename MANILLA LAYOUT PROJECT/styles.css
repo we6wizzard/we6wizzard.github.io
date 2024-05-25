@@ -1,15 +1,16 @@
 
 body {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color: black;
 }
 
 
 .container {
     display: grid; 
-    grid-template-rows: 300px 900px 500px 500px 300px;
-    grid-template-columns: 3fr 1.5fr 2fr 2fr ;
+    grid-template-rows: 300px 900px 500px 500px 350px;
+    grid-template-columns: 1.5fr 1fr 2fr 2fr ;
     background-color: #E4E4E4;
     gap: 20px;
     grid-template-areas: 
@@ -22,13 +23,14 @@ body {
 
 
 
-div header {
+.header-content {
     grid-area: header;
     background-color: #E4E4E4;
     border: 2px solid midnightblue;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+   
 
 }
 
@@ -37,33 +39,37 @@ h1 {
     padding-left: 50px;
 }
 
-h2 {
-    padding-bottom: 60px;
-    padding-left: 50px;
-    font-size: 1.5rem;
+header div h2 {
+    padding-right: 100px;
 }
 
-
-
-
+h2 {
+    padding-bottom: 60px;
+    padding-left: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+}
 
 
 button {
     background-color: lightskyblue;
     border-radius: 5px;
     border: 2px solid midnightblue;
-    padding: 10px 40px;
+    padding: 10px 60px;
     color: midnightblue;
     font-size: 1.5rem;
+    margin: 50px;
 }
 
 
+/*ASIDE LEFT*/
 
-
-
-
-
-
+.aside-left {
+    grid-area: aside-left;
+    border: 2px solid midnightblue;
+    text-align: center;
+    padding-top: 20px;
+}
 
 .nav-1 {
     grid-area: nav;
@@ -73,48 +79,79 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
-    
 }
+
 
 .nav-1 a {
     text-decoration: none;
     font-weight: bold;
-    padding-left: 10px;
-    
+    padding: 20px 10px;
+    color: black;
+}
 
+.nav-1 a:hover {
+    color: orange;
 }
 
 
-
-
-
-
-.aside-left {
-    grid-area: aside-left;
-    border: 2px solid midnightblue;
-}
+/*ASIDE RIGHT*/
 
 .aside-right {
     grid-area: aside-right;
     border: 2px solid midnightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px; 
+}
+
+.post-title {
+    padding-top: 20px;
+}
+    
+.post {
+    padding-top: 20px;
 }
 
 
+/*MAIN*/
 
 main {
     grid-area: main;
     background-color:  #E4E4E4;
     border: 2px solid midnightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
 }
 
 main img {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 350px;
+}
+
+li {
+    padding-bottom: 20px;
+}
+
+main p {
+    padding: 0 15px;
+}
+
+ol {
+    margin-bottom: 390px;
+}
+
+.images {
+    gap: 20px;
 }
 
 
 
+/*YOU MIGHT ALSO LIKE SECTION*/
 
 section {
     grid-area: section;
@@ -122,11 +159,12 @@ section {
     border: 2px solid midnightblue;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
     gap: 50px;
+    
 }
 
-section img{
+section img {
     height: 250px;
     width: 450px;
     
@@ -134,14 +172,19 @@ section img{
 
 section h2 {
     align-self: flex-start;
-    margin-bottom: 30px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    
+
 }
-    
 
 
-    
 
 
+
+
+/* FOOTER */
 
 footer {
     grid-area: footer;
@@ -150,19 +193,22 @@ footer {
     padding-left: 50px;
     padding-top: 40px; 
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-
-
-    
+    justify-content: space-between;
+    align-items: center;
 }
 
 
 footer a {
     text-decoration: none;
+    color: black;
+}
 
+footer a:hover {
+    color: orange;
+}
+
+.address {
+    padding: 50px;
 }
 
 .nav-2 a {
