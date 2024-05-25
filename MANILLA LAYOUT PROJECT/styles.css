@@ -8,7 +8,7 @@ body {
 
 .container {
     display: grid; 
-    grid-template-rows: 200px 900px 500px 500px 300px;
+    grid-template-rows: 300px 900px 500px 500px 300px;
     grid-template-columns: 3fr 1.5fr 2fr 2fr ;
     background-color: #E4E4E4;
     gap: 20px;
@@ -22,12 +22,12 @@ body {
 
 
 
-header {
+div header {
     grid-area: header;
     background-color: #E4E4E4;
     border: 2px solid midnightblue;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
 }
