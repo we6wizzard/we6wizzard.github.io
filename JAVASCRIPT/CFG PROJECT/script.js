@@ -2,20 +2,18 @@
  // Menu items organised by cuisine
  const menuItems = {
     italian: [
-        { name: "Pizza", 
+        { name: "Lasagne", 
         price: 10.99, 
-        image: "../IMAGES PIZZA PARADISE + CFG HUNGER HUB PROJECT/pizza.jpg"},
+        image: "IMAGES/lasagne.webp"},
         
         
         { name: "Spaghetti Bolognaise", 
         price: 7.99, 
-        image: "../IMAGES PIZZA PARADISE + CFG HUNGER HUB PROJECT/spagbol.jpg" },
-      
-      
+        image: "IMAGES/spaghetti-bolognese.jpeg" },
       
         { name: "Pasta", 
         price: 11.99, 
-        image: "../IMAGES PIZZA PARADISE + CFG HUNGER HUB PROJECT/pasta.jpg" },
+        image: "IMAGES/pizza.jpg" },
     ],
  };
     
@@ -78,6 +76,13 @@ function updateCart() {
     });
     const cartTotal = document.getElementById("cart-total");
     cartTotal.textContent = total.toFixed(2);
+
+    const addRemoveButton = document.createElement("button");
+    addRemoveButton.textContent = "Remove";
+    addRemoveButton.onclick = () => addToCart(item.name, item.price, item.image);
+    menuItem.removeChild(addRemoveButton);
+
+    menu.removeChild(menuItem);
 }
 
 // Function to simulate checkout
