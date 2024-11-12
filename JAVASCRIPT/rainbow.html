@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow</title>
+</head>
+<body>
+
+    <script>
+        function rainbowify() {
+            let divs = document.getElementsByTagName("div");
+            for (let i = 0; i < divs.length; i++) {
+                divs[i].style.backgroundColor = divs[i].id;            }
+
+        }
+    </script>
+
+    <style>
+        div {
+            height: 30px;
+            width: 30px;
+            background-color: white;
+        }
+    </style>
+
+    <div id="red">RED</div>
+    <div id="orange">ORANGE</div>
+    <div id="yellow">YELLOW</div>
+    <div id="green">GREEN</div>
+    <div id="blue">BLUE</div>
+    <div id="indigo">INDIGO</div>
+    <div id="violet">VIOLET</div>
+
+    <button onclick="rainbowify()">MAKE ME A RAINBOW</button>
+    
+</body>
+</html>
