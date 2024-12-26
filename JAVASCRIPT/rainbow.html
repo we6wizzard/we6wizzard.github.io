@@ -11,7 +11,20 @@
         function rainbowify() {
             let divs = document.getElementsByTagName("div");
             for (let i = 0; i < divs.length; i++) {
-                divs[i].style.backgroundColor = divs[i].id;            }
+                divs[i].style.backgroundColor = divs[i].id; 
+            
+            }
+
+
+            for (let i = 0; i < divs.length; i++)  {
+                divs[i].textContent = divs[i].id;
+
+                const firstLetter = divs[i].textContent.slice(0,1).toUpperCase;
+                const restOfWord = textContent.substring(1, textContent.length);
+
+                
+
+            }
 
         }
     </script>
@@ -24,13 +37,13 @@
         }
     </style>
 
-    <div id="red">RED</div>
-    <div id="orange">ORANGE</div>
-    <div id="yellow">YELLOW</div>
-    <div id="green">GREEN</div>
-    <div id="blue">BLUE</div>
-    <div id="indigo">INDIGO</div>
-    <div id="violet">VIOLET</div>
+    <div id="red"></div>
+    <div id="orange"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+    <div id="indigo"></div>
+    <div id="violet"></div>
 
     <button onclick="rainbowify()">MAKE ME A RAINBOW</button>
     
