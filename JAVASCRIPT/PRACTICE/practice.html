@@ -28,7 +28,7 @@
         <li>Won't Change</li>
         <li class = "js-target">Unchanged</li>
         <li>Won't Change</li>
-        <li class = "js-target">Unchanged</li>    
+        <li class = "js-target"> Unchanged</li>    
     </ul>
 
     <button class="event-button">Click Me!</button>
@@ -53,7 +53,7 @@
     const elementsToChange = document.querySelectorAll(".js-target");
     for (let i = 0; i < elementsToChange.length; i++) {
        const currentElement = elementsToChange[i];
-        currentElement.innerText = "JavaScript Is Cool!";
+        currentElement.innerText = "My nmae is Charlene";
     }
 
     const button = 
@@ -73,12 +73,10 @@
     const segment = document.querySelector(".color-box");
     
     insert.addEventListener("change", function () {
-        segment.style.backgroundColor = insert.value;
+    segment.style.backgroundColor = insert.value;
     });
 
-    document
-       .querySelector(".button-container")
-       .addEventListener("click", function (event) {
+    document.querySelector(".button-container").addEventListener("click", function (event) {
         alert(`You clicked on button ${event.target.innerText}`);
        });
     
