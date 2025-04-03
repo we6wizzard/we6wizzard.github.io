@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Ex 10.4</title>
+</head>
+<body>
+
+    <h1>Practice Ex 10.4</h1>
+
+    <button id="btn">Click Me</button>
+
+    <p>Use JavaScript to select page elements via their tag getElementByTagName
+        <ol>
+            <li>Start by creating a simple HTML file</li>
+            <li>Create three elements using the same tag</li>
+            <li>Add a script element within each element so you can distinguish between them</li>
+            <li>Add a script element to your HTML file, and witihn it select the page elements by tag name and store them in a variable as an array</li>
+            <li>Using the index value, select the middle element and output it into the console</li>
+        </ol>
+    </p>
+
+    <div id ="one" class="delta">Box 1</div>
+    <div id="two" class="delta">Box 2</div>
+    <div id="three" class="everything">Box 3</div>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci excepturi veniam reprehenderit esse similique incidunt. Illum eaque laborum aliquam voluptates qui tempore! Hic porro earum et minima vero provident 
+        veniam.
+    </p>
+
+    <p>I am Charlene, aged 40. I am learning HTML, CSS and JavaScript.</p>
+    
+
+
+
+<script>
+
+    const html_collection = document.getElementsByClassName("delta");
+    console.log(html_collection);
+
+    console.log(html_collection[0]);
+
+
+
+</script>
+
+
+</body>
+</html>

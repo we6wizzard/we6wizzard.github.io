@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+body {
+    background-color: beige;
+}
+.container {
+    height: 700px;
+    width: 80%;
+    margin: 200px auto;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat (3, 1fr);
+    border-radius: 20px;
+}
+
+
+
+
+.box {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 2px solid white;
+}
+
+
+.first {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: white;
+}
+
+
+.second {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.third {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto
+    }
+
+    
+
+
+}
+
+
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="container">
+    
+    
+        
+    
+    <div class="box first">FIRST</div>
+    
+    
+    
+    
+    <div class="box second" style="background-color: #D81B60">SECOND</div>
+    <div class="box third" style="background-color: #8E24AA">THIRD</div>
+
+
+    </div>
+    
+</body>
+</html>
