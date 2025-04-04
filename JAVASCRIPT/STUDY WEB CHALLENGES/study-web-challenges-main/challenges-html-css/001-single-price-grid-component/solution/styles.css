@@ -111,6 +111,23 @@ span {
 }
 
 
+@media (max-width: 600px){
+    .top-row h1 {
+        margin: center;
+        
+    }
+}
+
+@media (max-width: 600px) {
+    .bottom-row {
+        grid-template-columns: 1fr;
+        
+
+
+    }
+}
+
+
 
 
 
