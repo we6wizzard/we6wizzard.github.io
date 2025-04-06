@@ -215,8 +215,32 @@ a {
 
     }
 
-    
+    #date {
+        justify-content: flex-start;
+    }
+
+    #date-2 {
+        justify-content: flex-start;
+    }
+
+    .ud-links-left {
+        justify-content: flex-start;
+    }
+
+    .ud-links-right {
+        justify-content: flex-start;
+        
+    }
+
+    .right {
+        padding: 0;
+    }
+
+   
 }
+
+    
+
 
 
 
