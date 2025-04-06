@@ -58,7 +58,7 @@ body {
 
 
 .navbar .right img {
-    width: 24px;
+    width: 35px;
     height: 24px;
 
 }
@@ -306,6 +306,7 @@ body {
         font-size: 14px;
         padding: 32px;
     }
+    
     .project-grid {
         grid-template-areas:
         "eth eth"
