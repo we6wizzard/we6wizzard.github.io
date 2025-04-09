@@ -322,7 +322,7 @@ p {
 
 /* RESPONSIVE MEDIA QUERIES */
 
-@media only screen and (max-width: 1480px) {
+@media only screen and (max-width: 1520px) {
     .navbar a {
         margin: 0 5px;
     
@@ -331,7 +331,17 @@ p {
   
 }
 
-@media (max-width: 1384px) {
+@media (max-width: 832px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1377px) {
     .navbar {
         flex-direction: column;
     }
