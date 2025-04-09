@@ -3,14 +3,13 @@ body {
     font-size: 2rem;
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle, #ff7f50, #1e90ff); 
+    background: radial-gradient(circle, orange, blue); 
 }  
 
 
 
 .navbar {
     display: flex;
-    background-color: slateblue;
     color: white;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +18,7 @@ body {
 
 .navbar a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0 20px;
 }
 
@@ -27,70 +26,49 @@ body {
     color: orange;
 }
 
+.webdev {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
-
-
-
-
-
-
-
-
-
+/* PROJECT GRID */
 
 .project-grid {
     display: grid;
     grid-template-areas:
-    "course date" 
+    "course-3 date-3"
+    "cwdbp-feature-left cwdbp-feature-right"
+    "cwdbp-links-left cwdbp-links-right"
+    "course-2 date-2" 
     "fm-feature-left fm-feature-right"
     "fm-links-left fm-links-right"
-    "course-2 date-2"
-    "ud-feature-left ud-feature-right"
-    "ud-links-left ud-links-right";
-    
-    
-    row-gap: 16px;
-    column-gap: 30px;
+    "course date"
+    "html-css-bootcamp-feature-left html-css-bootcamp-feature-right"
+    "html-css-bootcamp-links-left html-css-bootcamp-links-right";
+   
     max-width: 2000px;
     margin: 100px auto;
     padding: 32px;
     border: 2px solid white;
     border-radius: 30px;
-
-}
-
-
-#fm-feature-left {
-    grid-area: fm-feature-left;
-    width: 100%;
-    height: 50%;
-
-    
-
-}
-
-#fm-feature-right {
-    grid-area: fm-feature-right;
-    width: 100%;
-    height: 50%;
-  
    
+
 }
 
-#ud-links-left {
-    grid-area: ud-links-left;
-}
 
-#ud-links-right { 
-grid-area: ud-links-right;
-} 
+
+/* HTML & CSS BOOTCAMP 2023 EDITION */
 
 #course {
     grid-area: course;
     color: lightgray;
     font-weight: bold;
+   
+
 }
 
 #date {
@@ -101,10 +79,99 @@ grid-area: ud-links-right;
     font-weight: bold;
 }
 
+
+
+#html-css-bootcamp-feature-left {
+    grid-area: html-css-bootcamp-feature-left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+#html-css-bootcamp-feature-right {
+    grid-area: html-css-bootcamp-feature-right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#html-css-bootcamp-links-left {
+    grid-area: html-css-bootcamp-links-left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#html-css-bootcamp-links-right { 
+grid-area: html-css-bootcamp-links-right;
+display: flex;
+justify-content: center;
+align-items: center;
+} 
+
+
+
+/*COMPLETE WEB DEV BOOTCAMP PROJECTS */
+
+#course-3 {
+    grid-area: course-3;
+   
+    color: lightgray;
+    font-weight: bold;
+}
+
+
+
+#date-3 {
+    grid-area: date-3;
+    color: lightgray;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#cwdbp-feature-left {
+    grid-area: cwdbp-feature-left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cwdbp-feature-right {
+    grid-area: cwdbp-feature-right; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#cwdbp-links-left {
+    grid-area: cwdbp-links-left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cwdbp-links-right {
+    grid-area: cwdbp-links-right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*COMPLETE INTRO TO WEB DEV V3 */
+
 #course-2 {
     grid-area: course-2;
     color: lightgray;
     font-weight: bold;
+    
 }
 
 #date-2 {
@@ -116,24 +183,43 @@ grid-area: ud-links-right;
     font-weight: bold;
 }
 
+
+#fm-feature-left {
+    grid-area: fm-feature-left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#fm-feature-right {
+    grid-area: fm-feature-right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+   
+}
+
 #fm-links-left {
     grid-area: fm-links-left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #fm-links-right {
     grid-area: fm-links-right;
+    display: flex;
+    justify-content: center;
+    align-items: centre;
 }
 
-#ud-feature-left {
-    grid-area: ud-feature-left;
-   
 
-}
 
-#ud-feature-right {
-    grid-area: ud-feature-right;
-    
-}
+
+
 
 
 
@@ -143,11 +229,16 @@ grid-area: ud-links-right;
 
 
 .project img {
-    width: 100%;
-    object-fit: cover;
-    height: 50%;
+    width: 500px;
+    height: 500px;
     border-radius: 20px;
+    margin: 0;
+    object-fit: cover;
+    height: 200px;
+
+    
     border: 2px solid black;
+    
     
 } 
 
@@ -160,6 +251,11 @@ grid-area: ud-links-right;
     padding: 0;
 }
 
+.left a,
+.right a {
+    color: white;
+}
+
 
 
 .left {
@@ -167,6 +263,7 @@ grid-area: ud-links-right;
     justify-content: center;
     align-items: center;
     padding-left: 110px;
+    
 }
 
 .left a:hover {
@@ -188,7 +285,36 @@ grid-area: ud-links-right;
 
 a {
     text-decoration: none;
+    font-size: 2rem;
+    
 }
+
+
+
+
+
+
+
+
+/* ABOUT */
+
+.charley {
+    height: 600px;
+    width: 600px;
+    border: 4px solid black;
+    
+    float:left;
+    margin: 30px 30px;
+    border-radius: 30px;
+   
+}
+
+p {
+    margin: 30px 30px;
+    padding: 30px;
+}
+
+
 
 
 
@@ -196,76 +322,74 @@ a {
 
 /* RESPONSIVE MEDIA QUERIES */
 
-@media (max-width: 768px) {
-    .project-grid {
-        display: grid;
-        grid-template-areas:
-        "course"
-        "date"
-        "fm-feature-left"
-        "fm-feature-right"
-        "fm-links-left" 
-        "fm-links-right"
-        "course-2" 
-        "date-2"
-        "ud-feature-left" 
-        "ud-feature-right"
-        "ud-links-left" 
-        "ud-links-right";
-
-    }
-
-    #date {
-        justify-content: flex-start;
-    }
-
-    #date-2 {
-        justify-content: flex-start;
-    }
-
-    .ud-links-left {
-        justify-content: flex-start;
-    }
-
-    .ud-links-right {
-        justify-content: flex-start;
-        
-    }
-
-    .right {
-        padding: 0;
-    }
-
-   
-}
-
-    
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 866px) {
+@media only screen and (max-width: 1480px) {
     .navbar a {
         margin: 0 5px;
     
     }
+
+  
 }
 
-
-
-
-
-@media only screen and (max-width: 806px) {
+@media (max-width: 1384px) {
     .navbar {
         flex-direction: column;
-
     }
+    
+    .project-grid {
+     
+        grid-template-areas:
+        "course-3"
+        "date-3"
+        "cwdbp-feature-left"
+        "cwdbp-feature-right"
+        "cwdbp-links-left" 
+        "cwdbp-links-right"
+        "course-2"
+        "date-2"
+        "fm-feature-left"
+        "fm-feature-right"
+        "fm-links-left"
+        "fm-links-right"
+        "course"
+        "date2"
+        "html-css-bootcamp-feature-left"
+        "html-css-bootcamp-feature-right"
+        "html-css-bootcamp-links-left"
+        "html-css-bootcamp-links-right";
+    }
+
+    #date-3, 
+    #date-2,
+    #date {
+        justify-content: flex-start;
+    }
+
+    .cwdbp-feature-left {
+        margin-bottom: 50px;
+        align-items: flex-start;
+    }
+
+    .cwdbp-feature-right {
+        margin-top: 50px;
+        align-items: flex-start;
+    }
+    
+   
 }
+
+
+
+
+    
+    
+
+
+
+
+
+
+
 
 
 
