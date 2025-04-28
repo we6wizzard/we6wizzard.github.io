@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/contact', (req, res) => {
-    res.send("<p>Phone: 0123456789</p>");
+    res.send("<p>Phone: +44123456789</p>");
 
 });
 
