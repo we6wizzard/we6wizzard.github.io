@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
     const day = new Date().getDay();
     const advice = adviceByDay[day];
     res.render('index.ejs', {advice}); //pass data from our server over to
-    //our template file, the ejs file. the ejs file has to live in a 
+    //our template file, the ejs file. The ejs file has to live in a 
     //"views" folder and we use the ejs syntax to pick up those properties and insert them into our html.
 
 });
