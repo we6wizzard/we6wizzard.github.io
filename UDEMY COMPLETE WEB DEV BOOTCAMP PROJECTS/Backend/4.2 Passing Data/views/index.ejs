@@ -9,7 +9,16 @@
 
 <body>
   <!-- Write your code here -->
-   <h1>Your Name Contains <%= letterCount %>Letters</h1>
+   
+
+   <% if (locals.numberOfLetters) { %>
+   <h1>There are <%=numberOfLetters%> Letters In Your Name</h1>
+   <% } else { %>
+
+    <h1>Write Your Name Below 👇</h1>
+
+  <% } %>
+
   <form action="/submit" method="POST">
     <input type="text" name="fName" placeholder="First name">
     <input type="text" name="lName" placeholder="Last name">
