@@ -1,0 +1,26 @@
+<%- include("header.ejs") %>
+
+
+<h1>My Blog</h1>
+
+<a href = "compose">+ New Post</a>
+<% if (posts.length > 0) { %>
+    <% posts.forEach(post => { %>
+        <div class = "post">
+            <h2><%= post.title %></h2>
+            <p><%= post.content %></p>
+
+            <form action = "/delete/<%= post.id %>" method = "POST" onsubmit = "return confirm('Delete this Post...?');">
+                <button type = "submit">Delete</button>
+            </form>
+        </div>
+
+    <% }) %>
+    
+    <% } else { %>
+    <p>No Blog Posts Available</p>
+
+<% } %>
+
+<%- include("footer.ejs") %>
+  
