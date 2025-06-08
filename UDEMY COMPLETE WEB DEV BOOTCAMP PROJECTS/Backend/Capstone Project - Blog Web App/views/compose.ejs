@@ -3,16 +3,18 @@
     
     
     <h1>Create a New Blog Post</h1>
+        <a href = "/">Back to Home</a>
     <form action="/compose" method="POST">
-        <label>Title:</label><br>
+        <!--<label>Title:</label><br> -->
         <input type="text" name="title" placeholder="Post Title" required><br><br>
         <textarea name="content" rows="10" placeholder="Post Content" required></textarea><br><br>
+
+        <button class="post-actions" type = "submit">Publish</button>
             
-            <button type = "submit">Publish</button><br><br>
+          
     </form>
     
-    <a href = "/">Back to Home</a>
-
+    
 
 <%- include("footer.ejs") %> 
 

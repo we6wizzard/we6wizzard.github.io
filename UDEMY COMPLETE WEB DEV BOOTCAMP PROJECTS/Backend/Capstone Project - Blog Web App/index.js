@@ -42,6 +42,33 @@ app.post("/compose", (req, res) => {
     res.redirect("/");
 });
 
+
+//Edit form
+app.get("/edit/:id", (req, res) => {
+    let post = blogPosts.find(p => p.id === req.params.id);
+    if (post) {
+        res.render("edit", { post });
+    } else {
+        res.status(404).send("Uh Oh Post not Found");
+    }
+});
+
+
+//Save Edit
+app.post("/edit/:id", (req, res) => {
+    let postId = req.params.id;
+    let updatedPost = blogPosts.find(p => p.id === postId);
+
+    if (updatedPost) {
+        updatedPost.title = req.body.title;
+        updatedPost.content = req.body.content;
+        res.redirect("/");
+    
+    } else {
+        res.status(404).send("Uh Oh Post not Found")
+    }
+});
+
 //Define the route for home page
 app.get("/about", (req, res) => {
    res.render("about.ejs");

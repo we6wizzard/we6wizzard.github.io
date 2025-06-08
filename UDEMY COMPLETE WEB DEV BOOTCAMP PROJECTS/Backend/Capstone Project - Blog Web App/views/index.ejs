@@ -1,18 +1,35 @@
 <%- include("header.ejs") %>
 
 
-<h1>My Blog</h1>
 
-<a href = "compose">+ New Post</a>
+
+<a class = "new-post" href = "compose"><button>+ New Post</button></a>
 <% if (posts.length > 0) { %>
     <% posts.forEach(post => { %>
+        
         <div class = "post">
+            <div class = "post-header">
             <h2><%= post.title %></h2>
-            <p><%= post.content %></p>
+             <p><%= post.content %></p>
+            
+            <div class = "post-actions">
+                
+                <form action = "/edit/<%= post.id %>" method = "GET" style = "display:inline;">
+                <button type="submit">Edit</button>
+                </form>
+                
+                <form action = "/delete/<%= post.id %>" method = "POST" onsubmit = "return confirm('Delete this Post...?');">
+                    <button type = "submit">Delete</button>
+                </form><br><br>
+            
+            </div>
+            </div>
+            
+            <!-- <p><%= //post.content %></p> -->
 
-            <form action = "/delete/<%= post.id %>" method = "POST" onsubmit = "return confirm('Delete this Post...?');">
-                <button type = "submit">Delete</button>
-            </form>
+           
+
+          
         </div>
 
     <% }) %>

@@ -1,0 +1,15 @@
+
+<%- include("header.ejs") %>
+
+    <h1>Edit Post</h1>
+    <a href = "/">Cancel</a>
+    <form action="/edit/<%= post.id %>" method = "POST">
+        <input type = "text" name = "title" value = "<%=post.title %>" required><br><br>
+        <textarea name = "content" rows = "10" required><%= post.content %></textarea><br><br>
+        <button class="post-actions" type = "submit">Save Changes</button>
+    </form>
+
+    
+
+<%- include("footer.ejs") %>
+    
