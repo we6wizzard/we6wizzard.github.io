@@ -1,0 +1,93 @@
+
+/* BACKGROUND AND CENTERING */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #6A9CD9, #B17DD6);
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+/*MAIN CONTAINER*/
+.container {
+    background: white;
+    max-width: 1000px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+
+/*COURSE SECTION*/
+.course-header {
+    margin-bottom: 1rem;
+}
+
+.course-header h2 {
+    margin: 0;
+}
+
+.provider,
+.date {
+    display: block;
+    font-size: .9rem;
+    color: #666;
+}
+
+
+/*PROJECTS GRID*/
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem
+}
+
+/*PROJECT CARDS*/
+
+.project-column {
+    display: flex;
+    flex-direction: column;
+}
+.project-card {
+    border: 2px solid #D7C6ED;
+    padding:1rem;
+    border-radius:10px;
+}
+
+.project-card h3 {
+    margin: 0;
+}
+
+.project-card .label {
+    color: #a06cd5;
+    font-size: .9rem;
+    margin: 0;
+}
+
+.resource-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem;
+
+
+}
+
+.resource-list li {
+    margin: 0.2rem 0;
+}
+
+.resource-list a {
+    text-decoration: none;
+    font-size: .9rem;
+
+}
+
+h1 {
+    color:rgb(7, 99, 139)
+}
+
+.divider {
+    border-top: 1px solid #CCC;
+    margin: 2rem 0;
+}
