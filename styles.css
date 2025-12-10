@@ -63,6 +63,15 @@ body {
 
 .project-card h3 {
     margin: 0;
+  
+}
+
+.project-card a {
+    text-decoration: none;
+}
+
+.project-card h3 a:hover {
+    color: orangered;
 }
 
 .project-card .label {
