@@ -1,0 +1,28 @@
+
+body {
+    background-color: pink;
+}
+
+#img1 {
+    width: 300px;
+    height: 200px;
+    display: block;
+
+}
+
+.cool-face {
+    height: 200px;
+    width: 200px;
+}
+
+
+
+p {
+    display: none;
+}
+
+#mycanvas {
+    border: 8px solid orange;
+
+
+}

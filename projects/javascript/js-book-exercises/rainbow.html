@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow</title>
+</head>
+<body>
+
+    <script>
+        function rainbowify() {
+            let divs = document.getElementsByTagName("div");
+            for (let i = 0; i < divs.length; i++) {
+                divs[i].style.backgroundColor = divs[i].id; 
+            
+            }
+
+
+            for (let i = 0; i < divs.length; i++)  {
+                divs[i].textContent = divs[i].id;
+
+                const firstLetter = divs[i].textContent.slice(0,1).toUpperCase;
+                const restOfWord = textContent.substring(1, textContent.length);
+
+                
+
+            }
+
+        }
+    </script>
+
+    <style>
+        div {
+            height: 150px;
+            width: 150px;
+            background-color: white;
+        }
+    </style>
+
+    <div id="red"></div>
+    <div id="orange"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+    <div id="indigo"></div>
+    <div id="violet"></div>
+
+    <button onclick="rainbowify()">MAKE ME A RAINBOW</button>
+    
+</body>
+</html>

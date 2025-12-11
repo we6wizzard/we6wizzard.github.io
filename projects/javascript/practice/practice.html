@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .red-square {
+            background-color: crimson;
+            width: 100px;
+            height: 100px;
+        }
+
+        .color-box {
+            background-color: limegreen;
+            width: 100px;
+            height: 100px;
+        }
+
+
+        .tweet {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        input {
+            height: 50px;
+            width: 500px;
+        }
+
+       
+    </style>
+
+    
+</head>
+<body>
+    <ul>
+        <li class = "js-target">Unchanged</li>
+        <li class = "js-target">Unchanged</li>
+        <li>Won't Change</li>
+        <li class = "js-target">Unchanged</li>
+        <li>Won't Change</li>
+        <li class = "js-target"> Unchanged</li>    
+    </ul>
+
+    <button class="event-button">Click Me!</button>
+
+
+    <div class=container>
+    <input placeholder = "Type Into Me!" class="input-to-copy" />
+    <p class="p-to-copy-to">Nothing has happened yet</p>
+    </div>
+    
+    <div class = "color-box"></div>
+    <input class="color-input" placeholder="Type a Colour Here!" />
+
+    <div class="button-container">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+    </div>
+
+
+   <div class="tweet">
+   <label for="tweet">Tweet:</label>
+   <input type="text" id="tweet" name="tweet" placeholder= "What's On Your Mind...?">
+   <li class="js-target-2">This tweet is under 140 characters long</li>
+</div>
+    
+</body>
+
+<script>
+    const elementsToChange = document.querySelectorAll(".js-target");
+    for (let i = 0; i < elementsToChange.length; i++) {
+       const currentElement = elementsToChange[i];
+        currentElement.innerText = "My name is Charlene";
+    }
+
+    const button = 
+    document.querySelector(".event-button");
+    button.addEventListener ("click", function () {
+        alert("Hey there!");
+    });
+
+    const input = document.querySelector(".input-to-copy");
+    const paragraph = document.querySelector(".p-to-copy-to");
+
+    input.addEventListener("keyup", function () {
+        paragraph.innerText = input.value;
+    });
+
+    const insert = document.querySelector(".color-input");
+    const segment = document.querySelector(".color-box");
+    
+    insert.addEventListener("change", function () {
+    segment.style.backgroundColor = insert.value;
+    });
+
+    document.querySelector(".button-container").addEventListener("click", function (event) {
+        alert(`You clicked on button ${event.target.innerText}`);
+    });
+
+    let tweet = document.getElementById("tweet");
+    let tweetMsg = document.getElementsByClassName(".js-target-2");
+    for (let i = 0; i > tweet.length; i++) {
+    const newTweet = tweetMsg[i];
+    newTweet.innerText = " ihwdihdw";
+    }
+    
+    let charactersUsed = tweet.length;
+    let charactersRemaining = 280 - tweet.length;
+
+    let slicedTweet = tweet.slice(0, 140);
+    console.log(slicedTweet);
+    console.log(tweet);
+    console.log("You have written " + charactersUsed + " characters " + "and have " + charactersRemaining + " characters remaining");
+
+
+    console.log(slicedTweet);
+    console.log(slicedTweet.length);
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+    
+</script>
+
+
+</html>

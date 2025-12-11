@@ -1,0 +1,29 @@
+<<<<<<< HEAD
+body {
+  margin: 100px;
+  padding: 0;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.new-todo {
+  width: 100%;
+}
+=======
+body {
+  margin: 100px;
+  padding: 0;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.new-todo {
+  width: 100%;
+}
+>>>>>>> 39b52194e9e81a7418ec49c8794e1e0a3570f525

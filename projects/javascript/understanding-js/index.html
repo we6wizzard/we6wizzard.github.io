@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover and Mouseout Events</title>
+
+ 
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <img
+        id="img1"
+        onmouseover="setNewImage()"
+        onmouseout="setOldImage()"
+        src="images/mouse-out.png"
+    />
+
+
+    <a href="javascript:void(0);"
+    onmouseover = "document.getElementById('paragraph').style.display ='inline';"
+    onmouseout =  "document.getElementById('paragraph').style.display ='none';" >Show More</a>
+
+
+  
+  
+    <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore 
+        soluta porro, ipsum temporibus dicta fugit aliquam? Officia harum optio 
+        voluptatibus architecto consectetur, 
+        doloribus porro ut aliquid deleniti consequuntur alias quoSunt, ratione!
+        Reprehenderit odio temporibus sed nulla quos, officia  tempora
+        similique velit eius impedit culpa deleniti recusandae! Soluta non 
+        quia at? Impedit rem nesciunt iure minus aperiam repudiandae incidunt 
+        consectetur. Nemo error et incidunt perferendis nulla quas repudiandae fugit iure 
+        veniam laudantium velit autem facilis, voluptas amet doloremque numquam 
+        nam non at dolores maiores vero neque porro ab. Maiores, debitis?
+    </p>
+
+    <h1>HTML DOM Events</h1>
+    <h2>The onmouseover Event</h2>
+
+    <p>Assign an "onmouseover" and "onmouseout" event to a h1 element</p>
+
+    <h1 id = "demo"
+    onmouseover = "mouseOver()"
+    onmouseOut = "mouseOut()">Mouse Over Me</h1>
+
+
+    <img class = "cool-face" onmouseover = "bigImg(this)"
+    onmouseout = "normalImg(this)" src="https://we6wizzard.github.io/hosted-assets/cool%20face.gif" alt = "Smiley" width="200" height="200">
+
+    <p>The function bigImg() is triggered when the user moves the mouse pointer over the image</p>
+    <p>The function normalImg() is triggered when the mouse pointer is moved out of the image</p>
+
+    
+    <h1>Snorkel Tour Price</h1>
+    
+    <h2>Calculate Your Total Price</h2>
+    
+    <form oninput="total.value = adult.valueAsNumber * 100 + child.valueAsNumber * 50">
+       Adults: <input type = "number" step = "1" name = "adult"><br>
+       Children: <input type = "number" step = "1" name = "child"><br>
+       Total: £<output name="total"></output>
+    
+    </form>
+    
+
+    <canvas id = "mycanvas" width ="700" height = "500"></canvas>
+
+
+</body>
+
+<script src="script.js"></script>
+</html>

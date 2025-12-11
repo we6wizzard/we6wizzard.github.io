@@ -1,0 +1,47 @@
+body {
+  background: black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.decrease,
+.increase,
+.decrease2,
+.increase2
+{
+  height: 80px;
+  width: 80px;
+  background: white;
+  font-size: 60px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.decrease,
+.decrease2 {
+  background-color: orange;
+
+}
+
+.increase,
+.increase2 {
+  background-color: greenyellow;
+}
+
+.counter {
+  height: 76px;
+  width: 80px;
+  margin: 0 20px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  text-align: center;
+  font-size: 40px;
+}

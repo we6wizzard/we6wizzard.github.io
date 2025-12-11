@@ -1,0 +1,51 @@
+
+body {
+    background-color: #FAFAFA;
+    font-family: "Quicksand", sans-serif;
+}
+
+flex-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu-item {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.menu-item img {
+    max-width: 100px; 
+    max-height: 150px;
+    margin-bottom: 10px;
+}
+
+.pizza-img {
+    width: 100px;
+    
+}
+
+.button {
+    border-radius: 5px;
+    background-color: lightgreen;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+#side-select, #pizza-select {
+    font-family: dancing script;
+    font-weight: 700;
+
+}
+
+label, p {
+    font-weight: bold;
+}

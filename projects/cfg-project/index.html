@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFG Food Group 2 Project</title>
+</head>
+<body>
+
+
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <link rel="stylesheet" href="styles.css">
+  
+  <img src="IMAGES/hunger-hub.png">
+
+  
+  
+    <p><label for="cuisine-select">Select Cuisine: </label>
+    <select id="cuisine-select" onchange="changeCuisine()">
+        <option value=""></option>
+        <option value="italian">Italian</option>
+        <option value="indian">Indian</option>
+        <option value="chinese">Chinese</option>
+        <option value="mexican">Mexican</option>
+     </select></p>
+   
+   
+   
+   
+     <div class="flex-container" id="menu">
+        <!-- Display food items here -->
+    </div>
+    <div class="cart">
+        <h2>Cart 🛒</h2>
+        <ul id="cart-items">
+            <!-- Display cart items here -->
+        </ul>
+        <p>Total: £<span id="cart-total">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
