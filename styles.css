@@ -1,5 +1,7 @@
 
 /* BACKGROUND AND CENTERING */
+
+
 body {
     margin: 0;
     font-family: sans-serif;
@@ -8,8 +10,10 @@ body {
     justify-content: center;
     align-items: center;
     padding: 3rem 1rem;
-    min-height: 100vh;
+    height: 100%;
 }
+
+
 
 /*MAIN CONTAINER*/
 .container {
@@ -22,14 +26,37 @@ body {
     margin: 100px auto;
 }
 
+.hero {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.avatar {
+    width: 140px;
+    height:140px;
+    border-radius: 50%;
+    margin: 3rem 0 1rem 0;
+}
+
+
+
+
+
+
+
 
 
 /*COURSE SECTION*/
 .course-header {
-    margin-bottom: 1rem;
+    margin:  2rem 0 2rem 0;
+    text-align: center;
 }
 
-.course-header h2 {
+.course-header h3 {
     margin: 0;
 }
 
@@ -38,8 +65,12 @@ body {
     display: block;
     font-size: 0.9rem;
     color: #666;
+    padding: 0;
 }
 
+p {
+    margin: 0;
+}
 
 /*PROJECTS GRID*/
 .projects-grid {
@@ -63,11 +94,13 @@ body {
 
 .project-card h3 {
     margin: 0;
+    
   
 }
 
 .project-card a {
     text-decoration: none;
+    color: #000;
 }
 
 .project-card h3 a:hover {
@@ -98,6 +131,9 @@ body {
 
 }
 
+
+
+
 .resource-list a:hover {
     color: orange;
 }
@@ -114,29 +150,30 @@ h1 {
 }
 
 h2 {
-    color: darkgrey
+    color: darkgrey;
+    margin: 0 0 2rem 0;
 }
+
+
+
+
+
 
 .divider {
     border-top: 1px solid #CCC;
     margin: 2rem 0;
 }
 
-img {
-    width: 100%;
-    max-width: 6em;
-    float: right;
-    border-radius: 10px;
-    border: 2px solid black;
-    
-}
+
 
 summary {
     cursor: pointer;
     font-weight: 600;
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 8px;color: lightseagreen;
 }
+
+
 
 details[open] summary {
     color: #6B4EFF;
