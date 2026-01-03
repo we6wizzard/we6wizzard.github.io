@@ -102,8 +102,13 @@ body {
     color: orange;
 }
 
+
+
 h1 {
-    color:rgb(7, 99, 139);
+    color: #000;
+    font-weight: 100;
+    text-shadow: -3px 3px 1px lightsteelblue;
+    letter-spacing: .2em;
 
    
 }
@@ -123,9 +128,23 @@ img {
     float: right;
     border-radius: 10px;
     border: 2px solid black;
-    margin-right: 6em;;
+    
 }
 
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+details[open] summary {
+    color: #6B4EFF;
+}
+
+span {
+    padding-left: 1.2rem
+}
 
 
 
